@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Girly Edit - 2026-2027 outfit trends, glow-up tips, self-love, and soft life inspiration for women in their early 20s.">
+  <title>The Girly Edit | 2026–2027</title>
+
+  <style>
+    :root {
+      --tiffany: #9fe3dc;
+      --tiffany-dark: #4eaaa3;
+      --pink: #ffd9e5;
+      --pink-soft: #fff3f7;
+      --olive: #77815a;
+      --olive-light: #e9edda;
+      --plum: #613b57;
+      --plum-light: #eadbe7;
+      --cream: #fffaf7;
+      --white: #ffffff;
+      --text: #342b32;
+      --muted: #756b72;
+      --shadow: 0 12px 35px rgba(97, 59, 87, 0.10);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 250, 247, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(97, 59, 87, 0.08);
+    }
+
+    .nav-inner {
+      max-width: 1150px;
+      margin: auto;
+      padding: 15px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      color: var(--plum);
+      font-size: 1.35rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: var(--tiffany-dark);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.92rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--plum);
+    }
+
+    /* General layout */
+    .container {
+      width: min(1150px, 92%);
+      margin: auto;
+    }
+
+    section {
+      padding: 85px 0;
+      scroll-margin-top: 70px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--pink);
+      color: var(--plum);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      color: var(--plum);
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 88vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 12% 20%, var(--pink) 0 11%, transparent 12%),
+        radial-gradient(circle at 88% 75%, var(--olive-light) 0 13%, transparent 14%),
+        linear-gradient(135deg, #e8faf7 0%, var(--cream) 48%, #f9e9f1 100%);
+      overflow: hidden;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      color: var(--plum);
+      font-size: clamp(3.2rem, 8vw, 6.6rem);
+      line-height: 0.95;
+      margin-bottom: 22px;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 em {
+      color: var(--tiffany-dark);
+      font-style: normal;
+    }
+
+    .hero-text {
+      font-size: 1.08rem;
+      max-width: 600px;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--plum);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: var(--tiffany);
+      color: var(--plum);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(97,59,87,0.08);
+      border-radius: 40px;
+      padding: 35px;
+      box-shadow: var(--shadow);
+      transform: rotate(2deg);
+    }
+
+    .hero-card-inner {
+      background: var(--pink-soft);
+      border-radius: 30px;
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .flower {
+      font-size: 4rem;
+      margin-bottom: 15px;
+    }
+
+    .hero-card h3 {
+      color: var(--plum);
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+    }
+
+    /* Trend cards */
+    .trend-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      padding: 27px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(97,59,87,0.06);
+    }
+
+    .card-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+    }
+
+    .icon-tiffany { background: var(--tiffany); }
+    .icon-pink { background: var(--pink); }
+    .icon-olive { background: var(--olive-light); }
+
+    .card h3 {
+      color: var(--plum);
+      margin-bottom: 8px;
+      font-size: 1.3rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Outfit section */
+    .outfits {
+      background: var(--tiffany);
+    }
+
+    .outfit-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .outfit-card {
+      min-height: 290px;
+      border-radius: 28px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: var(--white);
+      box-shadow: 0 10px 30px rgba(52, 43, 50, 0.10);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .outfit-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.75;
+    }
+
+    .outfit-one::before { background: linear-gradient(145deg, #f9e1e9, #e7f7f4); }
+    .outfit-two::before { background: linear-gradient(145deg, #ece6cf, #d9efe9); }
+    .outfit-three::before { background: linear-gradient(145deg, #e6d8e4, #f8e3ea); }
+    .outfit-four::before { background: linear-gradient(145deg, #d8ebe6, #eee7d2); }
+
+    .outfit-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .outfit-label {
+      color: var(--olive);
+      font-size: 0.75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .outfit-card h3 {
+      color: var(--plum);
+      font-size: 1.45rem;
+      margin: 5px 0;
+    }
+
+    .outfit-card p {
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    /* Glow-up */
+    .glow-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .glow-card {
+      padding: 30px;
+      border-radius: var(--radius);
+      background: var(--pink-soft);
+      border: 1px solid rgba(97,59,87,0.08);
+    }
+
+    .glow-card:nth-child(2) {
+      background: var(--olive-light);
+    }
+
+    .glow-card:nth-child(3) {
+      background: #e8f8f5;
+    }
+
+    .glow-card:nth-child(4) {
+      background: var(--plum-light);
+    }
+
+    .glow-card h3 {
+      color: var(--plum);
+      margin-bottom: 10px;
+    }
+
+    .glow-card ul {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .glow-card li {
+      margin: 7px 0;
+    }
+
+    /* Self-love quote */
+    .quote-section {
+      background: var(--plum);
+      color: white;
+      text-align: center;
+    }
+
+    .quote-section .eyebrow {
+      background: var(--pink);
+      color: var(--plum);
+    }
+
+    .quote {
+      max-width: 800px;
+      margin: auto;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1.2;
+    }
+
+    .quote-note {
+      margin-top: 18px;
+      color: #e8dce5;
+    }
+
+    /* Mini checklist */
+    .checklist {
+      background: var(--cream);
+    }
+
+    .checklist-box {
+      background: var(--white);
+      border-radius: 30px;
+      padding: 35px;
+      box-shadow: var(--shadow);
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 17px 0;
+      border-bottom: 1px solid #eee5e8;
+    }
+
+    .check-item:last-child {
+      border-bottom: none;
+    }
+
+    .check {
+      flex: 0 0 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--tiffany);
+      display: grid;
+      place-items: center;
+      color: var(--plum);
+      font-weight: bold;
+    }
+
+    .check-item strong {
+      color: var(--plum);
+    }
+
+    .check-item p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #f1e8ee;
+      padding: 35px 0;
+      text-align: center;
+    }
+
+    footer h3 {
+      color: var(--plum);
+      margin-bottom: 7px;
+    }
+
+    footer p {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .heart {
+      color: var(--plum);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-content,
+      .glow-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 500px;
+        margin: auto;
+      }
+
+      .trend-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .outfit-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 620px) {
+      .nav-inner {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 75px 0;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+      }
+
+      .trend-grid,
+      .outfit-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .outfit-card {
+        min-height: 230px;
+      }
+
+      .checklist-box {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-inner">
+      <a class="logo" href="#home">The <span>Girly</span> Edit ✿</a>
+      <ul class="nav-links">
+        <li><a href="#trends">Trends</a></li>
+        <li><a href="#outfits">Outfits</a></li>
+        <li><a href="#glowup">Glow Up</a></li>
+        <li><a href="#selflove">Self-Love</a></li>
+        <li><a href="#reset">Reset</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="container hero-content">
+      <div>
+        <span class="eyebrow">2026 — 2027 edition</span>
+        <h1>Your era.<br><em>Your rules.</em></h1>
+        <p class="hero-text">
+          A little corner for the girl figuring herself out in her early 20s:
+          what to wear, how to glow up, how to romanticize ordinary days,
+          and how to become the woman she actually wants to be.
+        </p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#trends">Explore the edit</a>
+          <a class="btn btn-secondary" href="#glowup">Start your glow-up</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-inner">
+          <div class="flower">🌷</div>
+          <h3>Soft, but not small.</h3>
+          <p>
+            Dress well. Rest well. Set boundaries. Take up space.
+            Your glow-up is not about becoming someone else.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TRENDS -->
+  <section id="trends">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">The moodboard</span>
+        <h2>What is on the 2026–2027 girl radar?</h2>
+        <p>
+          Think wearable, feminine, personal, and effortless. Trends are fun,
+          but the best style is the one that still feels like you.
+        </p>
+      </div>
+
+      <div class="trend-grid">
+        <article class="card">
+          <div class="card-icon icon-tiffany">🩰</div>
+          <h3>Soft Feminine</h3>
+          <p>
+            Ballet-inspired details, delicate textures, pretty flats, ribbons,
+            soft knits, and romantic silhouettes without looking overly dressed.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon icon-pink">🎀</div>
+          <h3>Pretty + Practical</h3>
+          <p>
+            Cute outfits that actually work for class, coffee dates, errands,
+            travel days, and everything in between.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon icon-olive">🫒</div>
+          <h3>Olive Everything</h3>
+          <p>
+            Olive, earthy neutrals, cream, chocolate, and muted colors bring
+            balance to an otherwise very girly wardrobe.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon icon-pink">👜</div>
+          <h3>Small Statement Bags</h3>
+          <p>
+            Compact bags with interesting shapes, textures, or colors can make
+            a simple outfit feel intentional.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon icon-tiffany">👟</div>
+          <h3>Comfy Shoes</h3>
+          <p>
+            Sneakers, ballet flats, loafers, and low-profile shoes keep outfits
+            cute while making everyday walking much easier.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon icon-olive">💌</div>
+          <h3>Personal Style</h3>
+          <p>
+            The biggest trend: mixing pieces you genuinely love instead of
+            buying something just because it went viral.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTFITS -->
+  <section class="outfits" id="outfits">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Outfit formulas</span>
+        <h2>Four looks to steal for your next main-character day.</h2>
+        <p>
+          Use these as formulas, not rules. Swap colors, shoes, and accessories
+          until the outfit feels like yours.
+        </p>
+      </div>
+
+      <div class="outfit-grid">
+        <article class="outfit-card outfit-one">
+          <div class="outfit-content">
+            <span class="outfit-label">01 · Everyday</span>
+            <h3>Baby Tee + Wide Jeans</h3>
+            <p>Add a tiny shoulder bag, simple jewelry, and comfy flats.</p>
+          </div>
+        </article>
+
+        <article class="outfit-card outfit-two">
+          <div class="outfit-content">
+            <span class="outfit-label">02 · Coffee Date</span>
+            <h3>Cardigan + Mini Skirt</h3>
+            <p>Keep the palette soft and add one playful accessory.</p>
+          </div>
+        </article>
+
+        <article class="outfit-card outfit-three">
+          <div class="outfit-content">
+            <span class="outfit-label">03 · Class Day</span>
+            <h3>Button-Up + Trousers</h3>
+            <p>Relaxed tailoring makes a simple student outfit look polished.</p>
+          </div>
+        </article>
+
+        <article class="outfit-card outfit-four">
+          <div class="outfit-content">
+            <span class="outfit-label">04 · Going Out</span>
+            <h3>Feminine Top + Denim</h3>
+            <p>Let one piece be the star and keep everything else simple.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOW UP -->
+  <section id="glowup">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">The glow-up guide</span>
+        <h2>Glow up from the inside out.</h2>
+        <p>
+          A real glow-up is less about changing your face and more about
+          building a life that makes you feel good in your own skin.
+        </p>
+      </div>
+
+      <div class="glow-grid">
+        <article class="glow-card">
+          <h3>🌸 Take care of your body</h3>
+          <ul>
+            <li>Build a sleep routine you can actually maintain.</li>
+            <li>Move your body in a way you enjoy.</li>
+            <li>Eat enough and drink water consistently.</li>
+            <li>Keep skincare simple and consistent.</li>
+          </ul>
+        </article>
+
+        <article class="glow-card">
+          <h3>🫒 Build your life</h3>
+          <ul>
+            <li>Learn one useful skill at a time.</li>
+            <li>Keep your room and digital space manageable.</li>
+            <li>Save money, even if the amount is small.</li>
+            <li>Make plans that do not revolve around other people.</li>
+          </ul>
+        </article>
+
+        <article class="glow-card">
+          <h3>🩵 Protect your peace</h3>
+          <ul>
+            <li>Stop explaining every boundary you set.</li>
+            <li>Mute accounts that make you compare yourself.</li>
+            <li>Give yourself permission to rest.</li>
+            <li>Choose consistency over perfection.</li>
+          </ul>
+        </article>
+
+        <article class="glow-card">
+          <h3>🍇 Become her</h3>
+          <ul>
+            <li>Keep promises you make to yourself.</li>
+            <li>Speak to yourself with respect.</li>
+            <li>Try new things before deciding you cannot.</li>
+            <li>Let your standards come from your values.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELF LOVE -->
+  <section class="quote-section" id="selflove">
+    <div class="container">
+      <span class="eyebrow">A reminder</span>
+      <p class="quote">
+        “You do not need to become prettier, smaller, richer, or more
+        impressive before you are allowed to enjoy your life.”
+      </p>
+      <p class="quote-note">Self-love is not a finish line. It is a daily practice.</p>
+    </div>
+  </section>
+
+  <!-- RESET CHECKLIST -->
+  <section class="checklist" id="reset">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Sunday reset</span>
+        <h2>A tiny reset for the week ahead.</h2>
+        <p>Save this page and come back whenever life feels a little messy.</p>
+      </div>
+
+      <div class="checklist-box">
+        <div class="check-item">
+          <span class="check">✓</span>
+          <div>
+            <strong>Clean one small space.</strong>
+            <p>Your desk, bag, vanity, or phone gallery. You do not need to clean everything.</p>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <span class="check">✓</span>
+          <div>
+            <strong>Plan three priorities.</strong>
+            <p>Pick the things that genuinely matter instead of creating an impossible to-do list.</p>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <span class="check">✓</span>
+          <div>
+            <strong>Pick your outfits.</strong>
+            <p>Even two planned outfits can make busy mornings feel less chaotic.</p>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <span class="check">✓</span>
+          <div>
+            <strong>Do one thing just for you.</strong>
+            <p>Read, walk, journal, get a drink, call a friend, or simply do absolutely nothing.</p>
+          </div>
+        </div>
+
+        <div class="check-item">
+          <span class="check">✓</span>
+          <div>
+            <strong>Go into the new week without needing to have it all figured out.</strong>
+            <p>You are allowed to be a work in progress.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <h3>The Girly Edit ✿</h3>
+      <p>Style, self-love & little reminders for your next era.</p>
+      <p>Made with <span class="heart">♥</span> for girls figuring life out.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
